@@ -19,6 +19,7 @@
     "expo-image": "~2.0.6"
   },
   "devDependencies": {
+    "@react-native-community/cli": "latest",
     "@babel/core": "^7.20.0"
   },
   "private": true

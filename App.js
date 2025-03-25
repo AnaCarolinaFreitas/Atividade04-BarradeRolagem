@@ -21,8 +21,8 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scroll}>
-        <Text>Acompanhe o Homem Aranha em uma Missão</Text>
-        <Image style={styles.img} source={require('./img/SpiderMan2.png')} />
+        <Text style={styles.title}>Acompanhe o Homem Aranha em uma Missão</Text>
+        <Image style={styles.img} source={require('./img/SpiderMan2.jpg')} />
 
         <Text style={styles.subtitle}>Principais inimigos</Text>
         <FlatList
@@ -52,10 +52,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+
+  title: {
+    fontSize: 20,
+    fontWeight: 'bold',
+  },
   
   img: {
-    width: 200,
-    height: 200,
+    width: 300,
+    height: 350,
     borderRadius: 10,
     marginTop: 20,
     marginBottom: 20,
@@ -71,7 +76,7 @@ const styles = StyleSheet.create({
     padding: 14,
   },
 
-  subtitle: { // Corrigido de "subtitulo" para "subtitle"
+  subtitle: { 
     fontSize: 16,
     fontWeight: 'bold',
     marginVertical: 10,
@@ -80,13 +85,14 @@ const styles = StyleSheet.create({
   item: {
     fontSize: 14,
     padding: 10,
-    marginLeft: 10,
+    
+    backgroundColor: '#447bbe',
   },
 
   sectionHeader: {
     fontSize: 16,
-    fontWeight: 'bold',
-    backgroundColor: '#f4f4f4',
+    fontWeight: 'bolder',
+    backgroundColor: '#2b3784',
     padding: 5,
     marginTop: 10,
   },
